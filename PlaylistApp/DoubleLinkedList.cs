@@ -84,10 +84,14 @@ namespace PlaylistApp
                         current.Next.Previous = current.Previous;
                     else
                         Tail = current.Previous;
+                    
+                    Size--;
                 }
                     
                 current = current.Next;
+                
             }
+            
         }
     }
 }
